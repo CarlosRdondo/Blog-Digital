@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Editar/Crear Artículo</title>
+  <link rel="stylesheet" type="text/css" href="styles3.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Editar/Crear Artículo</h1>
+    <a href="index.html" class="logout-button">Cerrar Sesión</a>
+    <a href="consulta.html" class="edit-button">Volver a la Consulta</a>
+    <form id="article-form">
+      <label for="bookTitle">Título del Libro:</label>
+      <input type="text" id="bookTitle" required>
+      <label for="bookAuthors">Autor(es):</label>
+      <input type="text" id="bookAuthors" required>
+      <label for="bookReview">Breve Reseña:</label>
+      <textarea id="bookReview" required></textarea>
+      <label for="bookImage">URL de la Imagen:</label>
+      <input type="text" id="bookImage" required>
+      <button id="save-button">Guardar</button>
+    </form>
+    <p id="article-error" class="error-message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
